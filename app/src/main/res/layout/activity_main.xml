@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/agree_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:textColor="#000000"
+        android:text="qq" />
+
+    <TextView
+        android:id="@+id/agree_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/agree_summary"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="10dip"
+        android:textColor="#D5AD3C"
+        android:text="167" />
+
+    <TextView
+        android:id="@+id/oppose_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/oppose_count"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:textColor="#000000"
+        android:text="HHH" />
+
+    <TextView
+        android:id="@+id/oppose_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:textColor="#D5AD3C"
+        android:text="16" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:layout_below="@+id/agree_summary"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/agree"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="2dip"
+            android:paddingRight="10dip"
+            android:layout_weight="0.6"
+            android:background="@drawable/shape_full_corners_agree" />
+
+        <TextView
+            android:id="@+id/oppose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="2dip"
+            android:layout_weight="0.4"
+            android:background="@drawable/shape_full_corners_oppose" />
+
+
+    </LinearLayout>
+</RelativeLayout>
